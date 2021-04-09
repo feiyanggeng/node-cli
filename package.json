@@ -1,0 +1,46 @@
+{
+  "name": "node-cli",
+  "version": "1.0.1",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "yf": "./dist/index.js"
+  },
+  "dependencies": {
+    "@angular/compiler": "^7.2.0",
+    "@types/commander": "^2.12.2",
+    "@types/lodash": "^4.14.119",
+    "@types/yargs": "^16.0.0",
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@types/node": "^14.14.37",
+    "chalk": "^4.1.0",
+    "chance": "^1.1.7",
+    "commander": "^7.1.0",
+    "d3-dsv": "^2.0.0",
+    "figlet": "^1.5.0",
+    "fs-extra": "^9.1.0",
+    "globby": "^11.0.2",
+    "google-translate": "^3.0.0",
+    "inquirer": "^8.0.0",
+    "js-yaml": "^4.0.0",
+    "json-schema-faker": "^0.5.0-rcv.34",
+    "json-server": "^0.16.3",
+    "lodash": "^4.17.21",
+    "prettier": "^2.2.1",
+    "qs": "^6.9.6",
+    "randomstring": "^1.1.5",
+    "shelljs": "^0.8.4",
+    "unzipper": "^0.10.11",
+    "vue-template-compiler": "^2.6.12",
+    "yargs": "^16.2.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": ""
+}
