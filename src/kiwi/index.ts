@@ -5,7 +5,6 @@ import { sync } from './sync';
 import { exportMessages } from './export';
 import { importMessages } from './import';
 import { findUnUsed } from './unused';
-import { mockLangs } from './mock';
 import { extractAll } from './extract/extract';
 import comb from "./comb/comb";
 import checkComb from "./comb/check"
@@ -75,19 +74,6 @@ function exportKiwi (file, lang) {
   });
 }
 
-// if (commander.mock) {
-//   const spinner = ora('使用 Google 翻译中...').start();
-//   sync(async () => {
-//     if (commander.mock === true && commander.args.length === 0) {
-//       await mockLangs();
-//     } else {
-//       await mockLangs(commander.mock, commander.args[0]);
-//     }
-  
-//     spinner.succeed('使用 Google 翻译成功');
-//   });
-// }
-
 async function extract(gk, dir) {
   if (!gk) {
     const google = await inquirer.prompt({
@@ -123,7 +109,7 @@ function runKiwi(yargs) {
       },
       export: {
         alias: "E",
-        description: "导出各种语言的翻译文案 --export [file] [lang] ",
+        description: "导出各种语言的翻译文案 --export [filePath] [lang] ",
         type: "boolean",
       },
       unused: {
@@ -133,7 +119,7 @@ function runKiwi(yargs) {
       },
       import: {
         alias: "I",
-        description: "导入已经翻译好的文案",
+        description: "导入已经翻译好的文案 --import [filePath] [lang]",
         type: "string",
       },
     })
