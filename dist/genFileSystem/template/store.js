@@ -1,4 +1,6 @@
-module.exports = `import $actions$ from './$actions$';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = `import $actions$ from './$actions$';
 import $actionTypes$ from './constants/$actionTypes$';
 import FluxBaseStore from 'common/fluxUtils/FluxBaseStore';
 import Dispatcher from 'common/fluxUtils/Dispatcher';
@@ -34,3 +36,4 @@ class $store$ extends FluxBaseStore {
 
 export default new $store$(Dispatcher);
 `;
+//# sourceMappingURL=store.js.map

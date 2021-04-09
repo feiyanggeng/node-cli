@@ -1,4 +1,6 @@
-module.exports = `import ExtensiblePageTitle from '$base$/components/ExtensiblePageTitle';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = `import ExtensiblePageTitle from '$base$/components/ExtensiblePageTitle';
 import $actions$ from '../$actions$';
 import $styleLess$ from '../style/$style$';
 
@@ -16,3 +18,4 @@ class $rootView$ extends React.PureComponent<RootViewPropsType> {
 
 export default $rootView$;
 `;
+//# sourceMappingURL=rootView.js.map

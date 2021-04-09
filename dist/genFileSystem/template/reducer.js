@@ -1,4 +1,6 @@
-module.exports = `import BaseReduxReducer from '$base$/ReduxStore/BaseReduxReducer';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = `import BaseReduxReducer from '$base$/ReduxStore/BaseReduxReducer';
 import $actionTypes$ from './constants/$actionTypes$';
 
 import {MappingPropsType} from './constants/$types$';
@@ -15,3 +17,4 @@ class $reducer$ extends BaseReduxReducer {
 
 export default new $reducer$($actionTypes$);
 `;
+//# sourceMappingURL=reducer.js.map

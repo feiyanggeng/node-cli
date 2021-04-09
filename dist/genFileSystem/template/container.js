@@ -1,4 +1,6 @@
-module.exports = `import {connect} from 'react-redux';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = `import {connect} from 'react-redux';
 import {STORE_PATH} from '../constants/$status$';
 
 import $actions$ from '../$actions$';
@@ -35,3 +37,4 @@ export default connect((state: Immutable.Map<string, any>) => ({
   $stateName$: state.getIn(STORE_PATH) || Immutable.Map(),
 }))($container$);
 `;
+//# sourceMappingURL=container.js.map

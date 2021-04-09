@@ -1,4 +1,6 @@
-module.exports = `import { RouteComponentProps } from 'react-router-dom';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = `import { RouteComponentProps } from 'react-router-dom';
 
 export interface RoutePropsType {
   history: RouteComponentProps['history'];
@@ -18,3 +20,4 @@ export interface RootViewPropsType extends RoutePropsType {
   isBlockLoading: boolean;
 }
 `;
+//# sourceMappingURL=types.js.map

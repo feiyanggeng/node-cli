@@ -159,4 +159,4 @@ function runKiwi(yargs) {
   }
 }
 
-export { runKiwi };
+export default runKiwi;
