@@ -7,7 +7,7 @@ const replaceIconfont_1 = require("./replaceIconfont");
 const kiwi_1 = require("./kiwi");
 process.title = "yufu";
 const yargs = require("yargs")
-    .usage("Usage: YUFU [options]")
+    .usage("Usage: yf [options]")
     .help("h")
     .alias("h", "help")
     .alias("v", "version")
@@ -20,7 +20,7 @@ const yargs = require("yargs")
     },
     genfiles: {
         alias: "g",
-        describe: "创建 idaas-web 项目中模块初始代码 (参数值：模块的名称)",
+        describe: "创建 idaas-web 项目中模块初始代码（--genfiles admin/modules/app/appList)",
         type: "string",
         global: false,
     },
@@ -32,7 +32,7 @@ const yargs = require("yargs")
     },
 })
     .command("kiwi", "kiwi 相关的所有命令集合", kiwi_1.default)
-    .epilog("前端项目工具类脚本集合");
+    .epilog("前端项目工具类脚本集合-yufu");
 const argvs = yargs.argv;
 const command = argvs._[0];
 if (!command) {

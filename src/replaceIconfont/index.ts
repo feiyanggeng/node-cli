@@ -5,10 +5,6 @@ import * as _  from 'lodash';
 import * as unzip  from 'unzipper';
 import { slash, mkdirSync } from "../utils";
 
-// const compressing = require('compression')
-// npm run iconfont 'path/to/new/download/iconfont.zip'
-// TODO: 待升级
-
 function replaceIconfont(iconfontSourcePath) {
   iconfontSourcePath = slash(iconfontSourcePath);
   const sourcePathArr: string[] = iconfontSourcePath.split("/");

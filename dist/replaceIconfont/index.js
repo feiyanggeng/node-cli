@@ -6,9 +6,6 @@ const path = require("path");
 const _ = require("lodash");
 const unzip = require("unzipper");
 const utils_1 = require("../utils");
-// const compressing = require('compression')
-// npm run iconfont 'path/to/new/download/iconfont.zip'
-// TODO: 待升级
 function replaceIconfont(iconfontSourcePath) {
     iconfontSourcePath = utils_1.slash(iconfontSourcePath);
     const sourcePathArr = iconfontSourcePath.split("/");
