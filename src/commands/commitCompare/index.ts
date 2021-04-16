@@ -46,7 +46,6 @@ function getCommitLogs(branchName, logFormat) {
 }
 
 function writeDiffLogs(lBranch, rBranch) {
-  console.log(lBranch, rBranch);
   const lLogs = getCommitLogs(lBranch, "%h / %s / %ae / %ci");
   const rLogs = getCommitLogs(rBranch, "%s");
   const dirPath = path.resolve(process.cwd(), "./commitDiffs");
@@ -72,6 +71,7 @@ function writeDiffLogs(lBranch, rBranch) {
     }
   });
   fs.appendFileSync(filePath, `\n\n`);
+  console.log(`详情查看： ${filePath}`);
 }
 
 const handler = () => {
